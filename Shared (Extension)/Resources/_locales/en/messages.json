@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "JSONable",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "Easily format, view, edit, & hide raw JSON.",
+        "description": "Description of what the extension does."
+    }
+}

@@ -1,0 +1,19 @@
+.jsonable-container {
+    
+}
+
+.jsonable-tree-element {
+    padding: 3px;
+}
+
+.jsonable-object {
+    border-left: 2px solid #00000030;
+}
+
+.jsonable-object:hover {
+    border-left: 2px solid black;
+}
+
+.jsonable-expand-toggle {
+    display: inline-block;
+}

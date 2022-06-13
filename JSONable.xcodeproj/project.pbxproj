@@ -1,0 +1,978 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E6841EB28554DD200D8CBBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6841EA28554DD200D8CBBF /* AppDelegate.swift */; };
+		0E6841ED28554DD200D8CBBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6841EC28554DD200D8CBBF /* SceneDelegate.swift */; };
+		0E6841F028554DD200D8CBBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841EE28554DD200D8CBBF /* LaunchScreen.storyboard */; };
+		0E6841F328554DD200D8CBBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841F128554DD200D8CBBF /* Main.storyboard */; };
+		0E6841FC28554DD200D8CBBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6841FB28554DD200D8CBBF /* AppDelegate.swift */; };
+		0E6841FF28554DD200D8CBBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841FD28554DD200D8CBBF /* Main.storyboard */; };
+		0E68420628554DD200D8CBBF /* JSONable Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0E68420528554DD200D8CBBF /* JSONable Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0E68421028554DD200D8CBBF /* JSONable Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0E68420F28554DD200D8CBBF /* JSONable Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0E68421628554DD200D8CBBF /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841D128554DD000D8CBBF /* Main.html */; };
+		0E68421728554DD200D8CBBF /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841D128554DD000D8CBBF /* Main.html */; };
+		0E68421828554DD200D8CBBF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841D328554DD000D8CBBF /* Icon.png */; };
+		0E68421928554DD200D8CBBF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841D328554DD000D8CBBF /* Icon.png */; };
+		0E68421A28554DD200D8CBBF /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841D428554DD000D8CBBF /* Style.css */; };
+		0E68421B28554DD200D8CBBF /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841D428554DD000D8CBBF /* Style.css */; };
+		0E68421C28554DD200D8CBBF /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841D528554DD000D8CBBF /* Script.js */; };
+		0E68421D28554DD200D8CBBF /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841D528554DD000D8CBBF /* Script.js */; };
+		0E68421E28554DD200D8CBBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6841D628554DD000D8CBBF /* ViewController.swift */; };
+		0E68421F28554DD200D8CBBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6841D628554DD000D8CBBF /* ViewController.swift */; };
+		0E68422028554DD200D8CBBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841D728554DD200D8CBBF /* Assets.xcassets */; };
+		0E68422128554DD200D8CBBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841D728554DD200D8CBBF /* Assets.xcassets */; };
+		0E68422228554DD200D8CBBF /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6841D928554DD200D8CBBF /* SafariWebExtensionHandler.swift */; };
+		0E68422328554DD200D8CBBF /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6841D928554DD200D8CBBF /* SafariWebExtensionHandler.swift */; };
+		0E68422428554DD200D8CBBF /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841DB28554DD200D8CBBF /* _locales */; };
+		0E68422528554DD200D8CBBF /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841DB28554DD200D8CBBF /* _locales */; };
+		0E68422628554DD200D8CBBF /* images in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841DC28554DD200D8CBBF /* images */; };
+		0E68422728554DD200D8CBBF /* images in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841DC28554DD200D8CBBF /* images */; };
+		0E68422828554DD200D8CBBF /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841DD28554DD200D8CBBF /* manifest.json */; };
+		0E68422928554DD200D8CBBF /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841DD28554DD200D8CBBF /* manifest.json */; };
+		0E68422A28554DD200D8CBBF /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841DE28554DD200D8CBBF /* background.js */; };
+		0E68422B28554DD200D8CBBF /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841DE28554DD200D8CBBF /* background.js */; };
+		0E68422C28554DD200D8CBBF /* injectable.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841DF28554DD200D8CBBF /* injectable.js */; };
+		0E68422D28554DD200D8CBBF /* injectable.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841DF28554DD200D8CBBF /* injectable.js */; };
+		0E68422E28554DD200D8CBBF /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841E028554DD200D8CBBF /* popup.html */; };
+		0E68422F28554DD200D8CBBF /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841E028554DD200D8CBBF /* popup.html */; };
+		0E68423028554DD200D8CBBF /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841E128554DD200D8CBBF /* popup.css */; };
+		0E68423128554DD200D8CBBF /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841E128554DD200D8CBBF /* popup.css */; };
+		0E68423228554DD200D8CBBF /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841E228554DD200D8CBBF /* popup.js */; };
+		0E68423328554DD200D8CBBF /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E6841E228554DD200D8CBBF /* popup.js */; };
+		0E6842482855899900D8CBBF /* website-verifier.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E6842472855899900D8CBBF /* website-verifier.js */; };
+		0E6842492855899900D8CBBF /* website-verifier.js in Resources */ = {isa = PBXBuildFile; fileRef = 0E6842472855899900D8CBBF /* website-verifier.js */; };
+		0E68424B28559F7F00D8CBBF /* injectable.css in Resources */ = {isa = PBXBuildFile; fileRef = 0E68424A28559F7F00D8CBBF /* injectable.css */; };
+		0E68424C28559F7F00D8CBBF /* injectable.css in Resources */ = {isa = PBXBuildFile; fileRef = 0E68424A28559F7F00D8CBBF /* injectable.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E68420728554DD200D8CBBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E6841CB28554DD000D8CBBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E68420428554DD200D8CBBF;
+			remoteInfo = "JSONable Extension (iOS)";
+		};
+		0E68421128554DD200D8CBBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E6841CB28554DD000D8CBBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E68420E28554DD200D8CBBF;
+			remoteInfo = "JSONable Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E68423928554DD200D8CBBF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0E68420628554DD200D8CBBF /* JSONable Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E68424028554DD200D8CBBF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0E68421028554DD200D8CBBF /* JSONable Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E6841D228554DD000D8CBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		0E6841D328554DD000D8CBBF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0E6841D428554DD000D8CBBF /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		0E6841D528554DD000D8CBBF /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		0E6841D628554DD000D8CBBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E6841D728554DD200D8CBBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E6841D928554DD200D8CBBF /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		0E6841DB28554DD200D8CBBF /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		0E6841DC28554DD200D8CBBF /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		0E6841DD28554DD200D8CBBF /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		0E6841DE28554DD200D8CBBF /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		0E6841DF28554DD200D8CBBF /* injectable.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = injectable.js; sourceTree = "<group>"; };
+		0E6841E028554DD200D8CBBF /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		0E6841E128554DD200D8CBBF /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		0E6841E228554DD200D8CBBF /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		0E6841E728554DD200D8CBBF /* JSONable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E6841EA28554DD200D8CBBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E6841EC28554DD200D8CBBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0E6841EF28554DD200D8CBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E6841F228554DD200D8CBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E6841F428554DD200D8CBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E6841F928554DD200D8CBBF /* JSONable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E6841FB28554DD200D8CBBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E6841FE28554DD200D8CBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E68420028554DD200D8CBBF /* JSONable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JSONable.entitlements; sourceTree = "<group>"; };
+		0E68420528554DD200D8CBBF /* JSONable Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JSONable Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E68420A28554DD200D8CBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E68420F28554DD200D8CBBF /* JSONable Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JSONable Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E68421428554DD200D8CBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E68421528554DD200D8CBBF /* JSONable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JSONable.entitlements; sourceTree = "<group>"; };
+		0E6842472855899900D8CBBF /* website-verifier.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "website-verifier.js"; sourceTree = "<group>"; };
+		0E68424A28559F7F00D8CBBF /* injectable.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = injectable.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E6841E428554DD200D8CBBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E6841F628554DD200D8CBBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E68420228554DD200D8CBBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E68420C28554DD200D8CBBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E6841CA28554DD000D8CBBF = {
+			isa = PBXGroup;
+			children = (
+				0E6841CF28554DD000D8CBBF /* Shared (App) */,
+				0E6841D828554DD200D8CBBF /* Shared (Extension) */,
+				0E6841E928554DD200D8CBBF /* iOS (App) */,
+				0E6841FA28554DD200D8CBBF /* macOS (App) */,
+				0E68420928554DD200D8CBBF /* iOS (Extension) */,
+				0E68421328554DD200D8CBBF /* macOS (Extension) */,
+				0E6841E828554DD200D8CBBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E6841CF28554DD000D8CBBF /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				0E6841D628554DD000D8CBBF /* ViewController.swift */,
+				0E6841D728554DD200D8CBBF /* Assets.xcassets */,
+				0E6841D028554DD000D8CBBF /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		0E6841D028554DD000D8CBBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E6841D128554DD000D8CBBF /* Main.html */,
+				0E6841D328554DD000D8CBBF /* Icon.png */,
+				0E6841D428554DD000D8CBBF /* Style.css */,
+				0E6841D528554DD000D8CBBF /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E6841D828554DD200D8CBBF /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				0E6841D928554DD200D8CBBF /* SafariWebExtensionHandler.swift */,
+				0E6841DA28554DD200D8CBBF /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		0E6841DA28554DD200D8CBBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E6841DB28554DD200D8CBBF /* _locales */,
+				0E6841DC28554DD200D8CBBF /* images */,
+				0E6841DD28554DD200D8CBBF /* manifest.json */,
+				0E6841DE28554DD200D8CBBF /* background.js */,
+				0E6841DF28554DD200D8CBBF /* injectable.js */,
+				0E68424A28559F7F00D8CBBF /* injectable.css */,
+				0E6842472855899900D8CBBF /* website-verifier.js */,
+				0E6841E028554DD200D8CBBF /* popup.html */,
+				0E6841E128554DD200D8CBBF /* popup.css */,
+				0E6841E228554DD200D8CBBF /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E6841E828554DD200D8CBBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E6841E728554DD200D8CBBF /* JSONable.app */,
+				0E6841F928554DD200D8CBBF /* JSONable.app */,
+				0E68420528554DD200D8CBBF /* JSONable Extension.appex */,
+				0E68420F28554DD200D8CBBF /* JSONable Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E6841E928554DD200D8CBBF /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				0E6841EA28554DD200D8CBBF /* AppDelegate.swift */,
+				0E6841EC28554DD200D8CBBF /* SceneDelegate.swift */,
+				0E6841EE28554DD200D8CBBF /* LaunchScreen.storyboard */,
+				0E6841F128554DD200D8CBBF /* Main.storyboard */,
+				0E6841F428554DD200D8CBBF /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		0E6841FA28554DD200D8CBBF /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				0E6841FB28554DD200D8CBBF /* AppDelegate.swift */,
+				0E6841FD28554DD200D8CBBF /* Main.storyboard */,
+				0E68420028554DD200D8CBBF /* JSONable.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		0E68420928554DD200D8CBBF /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				0E68420A28554DD200D8CBBF /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		0E68421328554DD200D8CBBF /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				0E68421428554DD200D8CBBF /* Info.plist */,
+				0E68421528554DD200D8CBBF /* JSONable.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E6841E628554DD200D8CBBF /* JSONable (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E68423A28554DD200D8CBBF /* Build configuration list for PBXNativeTarget "JSONable (iOS)" */;
+			buildPhases = (
+				0E6841E328554DD200D8CBBF /* Sources */,
+				0E6841E428554DD200D8CBBF /* Frameworks */,
+				0E6841E528554DD200D8CBBF /* Resources */,
+				0E68423928554DD200D8CBBF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E68420828554DD200D8CBBF /* PBXTargetDependency */,
+			);
+			name = "JSONable (iOS)";
+			productName = "JSONable (iOS)";
+			productReference = 0E6841E728554DD200D8CBBF /* JSONable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E6841F828554DD200D8CBBF /* JSONable (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E68424128554DD200D8CBBF /* Build configuration list for PBXNativeTarget "JSONable (macOS)" */;
+			buildPhases = (
+				0E6841F528554DD200D8CBBF /* Sources */,
+				0E6841F628554DD200D8CBBF /* Frameworks */,
+				0E6841F728554DD200D8CBBF /* Resources */,
+				0E68424028554DD200D8CBBF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E68421228554DD200D8CBBF /* PBXTargetDependency */,
+			);
+			name = "JSONable (macOS)";
+			productName = "JSONable (macOS)";
+			productReference = 0E6841F928554DD200D8CBBF /* JSONable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E68420428554DD200D8CBBF /* JSONable Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E68423628554DD200D8CBBF /* Build configuration list for PBXNativeTarget "JSONable Extension (iOS)" */;
+			buildPhases = (
+				0E68420128554DD200D8CBBF /* Sources */,
+				0E68420228554DD200D8CBBF /* Frameworks */,
+				0E68420328554DD200D8CBBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JSONable Extension (iOS)";
+			productName = "JSONable Extension (iOS)";
+			productReference = 0E68420528554DD200D8CBBF /* JSONable Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0E68420E28554DD200D8CBBF /* JSONable Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E68423D28554DD200D8CBBF /* Build configuration list for PBXNativeTarget "JSONable Extension (macOS)" */;
+			buildPhases = (
+				0E68420B28554DD200D8CBBF /* Sources */,
+				0E68420C28554DD200D8CBBF /* Frameworks */,
+				0E68420D28554DD200D8CBBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JSONable Extension (macOS)";
+			productName = "JSONable Extension (macOS)";
+			productReference = 0E68420F28554DD200D8CBBF /* JSONable Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E6841CB28554DD000D8CBBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					0E6841E628554DD200D8CBBF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					0E6841F828554DD200D8CBBF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					0E68420428554DD200D8CBBF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					0E68420E28554DD200D8CBBF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 0E6841CE28554DD000D8CBBF /* Build configuration list for PBXProject "JSONable" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E6841CA28554DD000D8CBBF;
+			productRefGroup = 0E6841E828554DD200D8CBBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E6841E628554DD200D8CBBF /* JSONable (iOS) */,
+				0E6841F828554DD200D8CBBF /* JSONable (macOS) */,
+				0E68420428554DD200D8CBBF /* JSONable Extension (iOS) */,
+				0E68420E28554DD200D8CBBF /* JSONable Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E6841E528554DD200D8CBBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E68421828554DD200D8CBBF /* Icon.png in Resources */,
+				0E6841F028554DD200D8CBBF /* LaunchScreen.storyboard in Resources */,
+				0E68421628554DD200D8CBBF /* Main.html in Resources */,
+				0E68421C28554DD200D8CBBF /* Script.js in Resources */,
+				0E68422028554DD200D8CBBF /* Assets.xcassets in Resources */,
+				0E6841F328554DD200D8CBBF /* Main.storyboard in Resources */,
+				0E68421A28554DD200D8CBBF /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E6841F728554DD200D8CBBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E68421928554DD200D8CBBF /* Icon.png in Resources */,
+				0E68421B28554DD200D8CBBF /* Style.css in Resources */,
+				0E6841FF28554DD200D8CBBF /* Main.storyboard in Resources */,
+				0E68421D28554DD200D8CBBF /* Script.js in Resources */,
+				0E68422128554DD200D8CBBF /* Assets.xcassets in Resources */,
+				0E68421728554DD200D8CBBF /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E68420328554DD200D8CBBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E68422A28554DD200D8CBBF /* background.js in Resources */,
+				0E68423028554DD200D8CBBF /* popup.css in Resources */,
+				0E68422E28554DD200D8CBBF /* popup.html in Resources */,
+				0E68424B28559F7F00D8CBBF /* injectable.css in Resources */,
+				0E68422628554DD200D8CBBF /* images in Resources */,
+				0E6842482855899900D8CBBF /* website-verifier.js in Resources */,
+				0E68422828554DD200D8CBBF /* manifest.json in Resources */,
+				0E68422428554DD200D8CBBF /* _locales in Resources */,
+				0E68422C28554DD200D8CBBF /* injectable.js in Resources */,
+				0E68423228554DD200D8CBBF /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E68420D28554DD200D8CBBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E68422B28554DD200D8CBBF /* background.js in Resources */,
+				0E68423128554DD200D8CBBF /* popup.css in Resources */,
+				0E68422F28554DD200D8CBBF /* popup.html in Resources */,
+				0E68424C28559F7F00D8CBBF /* injectable.css in Resources */,
+				0E68422728554DD200D8CBBF /* images in Resources */,
+				0E6842492855899900D8CBBF /* website-verifier.js in Resources */,
+				0E68422928554DD200D8CBBF /* manifest.json in Resources */,
+				0E68422528554DD200D8CBBF /* _locales in Resources */,
+				0E68422D28554DD200D8CBBF /* injectable.js in Resources */,
+				0E68423328554DD200D8CBBF /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E6841E328554DD200D8CBBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E68421E28554DD200D8CBBF /* ViewController.swift in Sources */,
+				0E6841EB28554DD200D8CBBF /* AppDelegate.swift in Sources */,
+				0E6841ED28554DD200D8CBBF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E6841F528554DD200D8CBBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E68421F28554DD200D8CBBF /* ViewController.swift in Sources */,
+				0E6841FC28554DD200D8CBBF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E68420128554DD200D8CBBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E68422228554DD200D8CBBF /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E68420B28554DD200D8CBBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E68422328554DD200D8CBBF /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E68420828554DD200D8CBBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E68420428554DD200D8CBBF /* JSONable Extension (iOS) */;
+			targetProxy = 0E68420728554DD200D8CBBF /* PBXContainerItemProxy */;
+		};
+		0E68421228554DD200D8CBBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E68420E28554DD200D8CBBF /* JSONable Extension (macOS) */;
+			targetProxy = 0E68421128554DD200D8CBBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E6841D128554DD000D8CBBF /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E6841D228554DD000D8CBBF /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		0E6841EE28554DD200D8CBBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E6841EF28554DD200D8CBBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0E6841F128554DD200D8CBBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E6841F228554DD200D8CBBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E6841FD28554DD200D8CBBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E6841FE28554DD200D8CBBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E68423428554DD200D8CBBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0E68423528554DD200D8CBBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0E68423728554DD200D8CBBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HFR8F4BT7E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JSONable Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazjap.JSONable.Extension;
+				PRODUCT_NAME = "JSONable Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E68423828554DD200D8CBBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HFR8F4BT7E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JSONable Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazjap.JSONable.Extension;
+				PRODUCT_NAME = "JSONable Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E68423B28554DD200D8CBBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HFR8F4BT7E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = JSONable;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazjap.JSONable;
+				PRODUCT_NAME = JSONable;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E68423C28554DD200D8CBBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HFR8F4BT7E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = JSONable;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazjap.JSONable;
+				PRODUCT_NAME = JSONable;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E68423E28554DD200D8CBBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/JSONable.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HFR8F4BT7E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JSONable Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazjap.JSONable.Extension;
+				PRODUCT_NAME = "JSONable Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0E68423F28554DD200D8CBBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/JSONable.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HFR8F4BT7E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JSONable Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazjap.JSONable.Extension;
+				PRODUCT_NAME = "JSONable Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0E68424228554DD200D8CBBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/JSONable.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HFR8F4BT7E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = JSONable;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazjap.JSONable;
+				PRODUCT_NAME = JSONable;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0E68424328554DD200D8CBBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/JSONable.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HFR8F4BT7E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = JSONable;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazjap.JSONable;
+				PRODUCT_NAME = JSONable;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E6841CE28554DD000D8CBBF /* Build configuration list for PBXProject "JSONable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E68423428554DD200D8CBBF /* Debug */,
+				0E68423528554DD200D8CBBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E68423628554DD200D8CBBF /* Build configuration list for PBXNativeTarget "JSONable Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E68423728554DD200D8CBBF /* Debug */,
+				0E68423828554DD200D8CBBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E68423A28554DD200D8CBBF /* Build configuration list for PBXNativeTarget "JSONable (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E68423B28554DD200D8CBBF /* Debug */,
+				0E68423C28554DD200D8CBBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E68423D28554DD200D8CBBF /* Build configuration list for PBXNativeTarget "JSONable Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E68423E28554DD200D8CBBF /* Debug */,
+				0E68423F28554DD200D8CBBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E68424128554DD200D8CBBF /* Build configuration list for PBXNativeTarget "JSONable (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E68424228554DD200D8CBBF /* Debug */,
+				0E68424328554DD200D8CBBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E6841CB28554DD000D8CBBF /* Project object */;
+}
